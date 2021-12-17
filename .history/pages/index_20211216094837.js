@@ -3,7 +3,7 @@ import Login from "../components/Login";
 import { useMoralis } from "react-moralis";
 
 export default function Home() {
-    const { isAuthenticated, logout } = useMoralis();
+    const { authenticate, isAuthenticated } = useMoralis();
 
     if (!isAuthenticated) return <Login />;
 
@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
 
       <h1>welcome to the app</h1>
-      <button onClick={logout}>Logout</button>
     </div>
   )
 }

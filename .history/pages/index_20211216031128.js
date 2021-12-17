@@ -1,11 +1,11 @@
-import Head from "next/head";
-import Login from "../components/Login";
+import Head from 'next/head'
+import Login from '../components/Login'
 import { useMoralis } from "react-moralis";
 
 export default function Home() {
-    const { isAuthenticated, logout } = useMoralis();
+    const { isAuthenticated } = useMoralis();
 
-    if (!isAuthenticated) return <Login />;
+    if (!isAuthenticated) return <Login />
 
 
   return (
@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
 
       <h1>welcome to the app</h1>
-      <button onClick={logout}>Logout</button>
     </div>
   )
 }

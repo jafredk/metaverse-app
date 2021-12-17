@@ -7,9 +7,8 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
     </MoralisProvider>
     
-  );
+  )
  
 }
 
-export default MyApp;
- 
+export default MyApp
