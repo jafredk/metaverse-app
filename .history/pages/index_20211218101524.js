@@ -39,7 +39,7 @@ export default function Home() {
 
 
 
-      
+      <button onClick={logout}>Logout</button>
     </div>
   )
 }
